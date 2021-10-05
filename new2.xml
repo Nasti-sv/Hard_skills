@@ -1,4 +1,10 @@
-Савчук Анастасия Ивановна
-25 лет
-2 собаки
-450 долларов
+<?xml version="1.0" encoding="UTF-8"?>
+
+<About>
+          <TITLE> About me </TITLE>
+          <first_name> Anastasiya </first_name>
+          <last_name> Savchuk </last_name>
+          <age> 24 </age>
+          <pets> 2 dogs </pets>
+          <salary> 400 dollars </salary>
+</About>
