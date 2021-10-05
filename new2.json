@@ -1,4 +1,14 @@
-Савчук Анастасия Ивановна
-24 года
-1 кот, 2 собаки
-400 долларов
+[{
+"firstName":"Anastasiya",
+"lastName":"Savchuk",
+"age":"24",
+"pets": "2 dogs",
+"wanted salary": "400 dollars"
+},
+ {
+   "favouriteFilm": "Good bye Chtristopher Robin",
+   "favouriteTvSeries": "Vigil",
+   "favouriteFood": "buckwheat",
+   "favouriteSeason": "spring",
+   "countryIwantTovisit": "Gerrgia"
+ }];
