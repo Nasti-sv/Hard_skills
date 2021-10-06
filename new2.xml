@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <About>
           <TITLE> About me </TITLE>
           <first_name> Anastasiya </first_name>
@@ -7,9 +6,6 @@
           <age> 24 </age>
           <pets> 2 dogs </pets>
           <salary> 400 dollars </salary>
-<<<<<<< HEAD
-</About>
-=======
           <favourite_Film> Good bye Chtristopher Robin </favourite_Film>
           <favourite_Tv_Series> Vigil </favourite_Tv_Series>
           <favourite_Food> buckwheat </favourite_Food>
