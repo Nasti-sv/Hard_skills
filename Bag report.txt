@@ -1,0 +1,27 @@
+﻿ID
+
+Короткое описание (Summary)
+
+Проект (Project)
+
+Серьезность (Severity)
+
+Приоритет (Priority)
+
+Статус (Status)
+
+Автор (Author)
+
+Назначен на (Assigned To)
+
+Окружение
+
+Шаги воспроизведения (Steps to Reproduce)
+
+Фактический Результат (Result)
+
+Ожидаемый результат (Expected Result)
+
+Прикрепленный файл 
+(Attachment) или логи
+
