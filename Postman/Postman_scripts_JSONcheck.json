@@ -302,12 +302,7 @@
 							"value": "{{token}}",
 							"type": "text"
 						}
-					],
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
+					]
 				},
 				"url": {
 					"raw": "{{url}}new_data",
@@ -547,6 +542,165 @@
 					"raw": "{{url}}get_test_user",
 					"host": [
 						"{{url}}get_test_user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "currency",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let responsei = pm.response.json();\r",
+							"var random = responsei[Math.floor(Math.random()*responsei.length)];\r",
+							"console.log(\"____+++\", random);\r",
+							"\r",
+							"var idcorrect = []\r",
+							"\r",
+							"for (let i = 0; i < responsei.length; i++) {\r",
+							"    pm.sendRequest({\r",
+							"    url: 'http://162.55.220.72:5005/currency',\r",
+							"    method: 'POST',\r",
+							"    header: { 'Content-Type': 'multipart/form-data' },\r",
+							"    body: {\r",
+							"      mode: 'formdata',\r",
+							"      formdata: [\r",
+							"        {key: \"auth_token\", value: pm.environment.get(\"token\"), disabled: false}\r",
+							"      ]\r",
+							"    }\r",
+							"  }, function (error, response) {\r",
+							"      if (response.status == 200) {\r",
+							"          console.log(\"-----\",  i[\"Cur_ID\"]);\r",
+							"          return response.json();\r",
+							"    }\r",
+							"\r",
+							"    });\r",
+							"};\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "auth_token",
+							"value": "{{token}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}currency",
+					"host": [
+						"{{url}}currency"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "curr_byn",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// 1) Статус код 200\r",
+							"pm.test(\"Status is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//2) Проверка структуры json в ответе\r",
+							"var response = pm.response.json();\r",
+							"var schm = {\r",
+							"    \"type\" : \"object\",\r",
+							"    \"properties\" : {\r",
+							"        \"Cur_Abbreviation\" :\r",
+							"        {\r",
+							"        \"type\" : \"string\"\r",
+							"    },\r",
+							"    \"Cur_ID\" : \r",
+							"    {\r",
+							"        \"type\" : \"integer\"\r",
+							"    },\r",
+							"    \"Cur_Name\" : \r",
+							"    {\r",
+							"        \"type\" : \"string\"\r",
+							"    },\r",
+							"    \"Cur_OfficialRate\" :\r",
+							"     {\r",
+							"        \"type\" : \"number\"\r",
+							"    },\r",
+							"    \"Cur_Scale\" : \r",
+							"    {\r",
+							"        \"type\" : \"integer\"\r",
+							"    },\r",
+							"    \"Date\" :\r",
+							"    { \r",
+							"        \"type\" : \"string\"\r",
+							"    },\r",
+							"    },\r",
+							"  \"required\": [\r",
+							"    \"Cur_Abbreviation\",\r",
+							"    \"Cur_ID\",\r",
+							"    \"Cur_Name\",\r",
+							"    \"Cur_OfficialRate\",\r",
+							"    \"Cur_Scale\",\r",
+							"    \"Date\"\r",
+							"  ]\r",
+							"}\r",
+							"\r",
+							"pm.test (\"Valid Json\", function() {\r",
+							"    let correct = tv4.validate(response, schm, true, true);\r",
+							"    pm.expect(correct).to.be.true;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "auth_token",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "curr_code",
+							"value": "394",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}curr_byn",
+					"host": [
+						"{{url}}curr_byn"
 					]
 				}
 			},
