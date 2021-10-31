@@ -1,0 +1,30 @@
+{
+    "type" : "object",
+    "properties" : {
+        "age" : {
+            "type" : "integer"
+        },
+        "name" : {
+            "type" : "string"
+        },
+        "salary" : {
+            "type" : "array",
+            "items" : [
+                {
+                    "type" : "integer"
+                },
+                {
+                    "type" : "string"
+                },
+                {
+                    "type" : "string"
+                }
+            ]
+        }
+    },
+    "required": [
+    "age",
+    "name",
+    "salary"
+  ]
+}
