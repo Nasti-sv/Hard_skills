@@ -5,228 +5,231 @@
 
 --Таблица employees
 
---1.Создать таблицу employees
+--1.Создать таблицу employees_now
 -- id. serial,  primary key,
 -- employee_name. Varchar(50), not null
 create table employees_now (
 id serial primary key,
 employee_name varchar(50) not null
 );
---Наполнить таблицу employee 70 строками.
+--изменить название таблицы
+alter table employees_now rename to employees;
+
+--Наполнить таблицу employees 70 строками.
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Maia Richlo');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
 values  (default, 'Maria Fakas');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Denis Onchulenko');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Petro Unhurian');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Dmitri Lutsu');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Halyna Onchulenko');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Liuda Savina');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Liuda Lutsu');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
 values  (default, 'Halyna Fakas');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Grigori Ferchuk');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Aleksandra Zitariuk');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
 values (default, 'Aleksandr Lutsu');
 
-insert into employees_now (id, employee_name)
+insert into employees (id, employee_name)
  values (default, 'Petro Onchulenko');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Maia Savina');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Artem Unhurian');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
 values  (default, 'Grigori Richlo');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Inna Ferchuk');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Anastasiya Zitariuk');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Viktor Savin');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Michailo Fakas');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Sergey Savin');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Alina Ferchuk');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Anton Zitariuk');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Iana Unhurian');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Maia Fakas');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Artem Savin');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Michailo Savchuk');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Diana Lutsu');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Petro Fakas');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Adle Savina');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Anastasiya Richlo');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Oksana Onchulenko');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Lesia Unhurian');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Michaela Zitariuk');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Olesia Gutsul');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Petro Lutsu');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Timofii Birov');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Nikifor Ferchuk');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Anastasiya Lutsu');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Stanislav Onchulenko');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Vadim Birov');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Ruslan Richlo');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Lilia Gutsul');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
 values  (default, 'Uliana Unhurian');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Michaela Bolosciuk');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Ivanna Savchuk');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Michailo Birov');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Oleg Gutsul');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Lilia Bolosciuk');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Ivab Savchuk');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Anastasiya Unhurian');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Volodymyr Gutsul');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Liuda Richlo');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Pavel Bolosciuk');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Lilia Ferchuk');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values(default, 'Anna Birova');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Michaela Savchuk');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
 values (default, 'Ruslan Birov');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Oleksii Zitariuk');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Eduard Unhurian');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Anastasiya Onchulenko');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Gustav Birov');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Igor Birov');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default,'Roman Savchuk');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Adam Bolosciuk');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Ignatii Zitariuk');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Marian Onchulenko');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Ruslan Unhurian');
  
- insert into employees_now (id, employee_name)
+ insert into employees (id, employee_name)
  values (default, 'Ruslan Gutsul');
 
  
 --случайно создала лишние строки, поэтому удалила их:
---delete from employees_now
+--delete from employees
 --where id<=4 and employee_name='Anastasiya Savchuk';
 -- А потом проверила есть ли все стороки:
---select * from employees_now;
+--select * from employees;
 
 
 --==================================================
@@ -284,92 +287,92 @@ insert into  salary(id, monthly_salary)
 -- id. Serial  primary key,
 -- employee_id. Int, not null, unique
 -- salary_id. Int, not null
-create table employee_salary_now (
+create table employee_salary (
 id serial primary key,
 employee_id int not null unique,
 salary_id int not null
 );
 --Наполнить таблицу employee_salary 40 строками:
 -- в 10 строк из 40 вставить несуществующие employee_id
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  5 ,  1 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  6 ,  2 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  7 ,  3 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  8 ,  4 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  9 ,  5 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  10 ,  6 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  11 ,  7 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  12 ,  8 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  13 ,  9 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  14 ,  10 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  15 ,  11 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  16 ,  12 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  17 ,  13 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  18 ,  14 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  19 ,  15 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  20 ,  1 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  21 ,  7 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  22 ,  8 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  23 ,  9 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  24 ,  11 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  25 ,  4 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  26 ,  13 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  27 ,  7 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  28 ,  6 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  29 ,  5 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  30 ,  8 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  31 ,  3 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  32 ,  2 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  33 ,  1 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  34 ,  7 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  354 ,  14 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  366 ,  15 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  377 ,  12 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  387 ,  14 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  397 ,  13 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  409 ,  1 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  419 ,  3 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  147 ,  2 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  243 ,  5 );
-insert into employee_salary_now (id, employee_id, salary_id)
+insert into employee_salary (id, employee_id, salary_id)
 values (default,  105 ,  1 );
 
 
@@ -468,7 +471,7 @@ id serial primary key,
 employee_id int not null unique,
 role_id int not null ,
 foreign key (employee_id)
-references employees_now (id),
+references employees (id),
 foreign key (role_id)
 references roles (id)
 );
