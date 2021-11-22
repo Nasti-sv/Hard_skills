@@ -1,0 +1,14 @@
+help - SSL proxying - Install Charles Root certificate - установить сертификат - Текущий пользователь  - далее - поместить все сертификаты в следующее хранилище = доверенные корневые центры сертификации 
+help - SSL proxying - Install Charles Root certificate - установить сертификат - Локальный компютер - далее - поместить все сертификаты в следующее хранилище = доверенные корневые центры сертификации 
+Проверить что в настройках винды есть вкл прокси и адрес например http=127.0.0.1:8888;https=127.0.0.1:8888
+на панели чарльза - proxy - SSL Proxying Settings - Enable SSL Proxying где есть галочка - include - add host *.* - ok, add host [], add host * -это указывает что нужно рассшифровывать увесь трафик - сохраняем
+
+
+
+настройка телефона андроид
+
+SSL сертификат на андроид
+1. опционально - Help - SSL Proxying - install Charles on a Mobile device or Remote Browser - http://chls.pro/ssl 
+2. настройки = network and internet (Підключення) = wi fi = configure - proxy (manual) ввести IP с компа в строку Proxy hostname або в прокси посмотреть help - local IP, proxy port 8888 , DHCP - сохранить
+3. Chls.pro/ssl скачать. Потом в настройки вайфай = три точки - дополнительно - установика мережю сертификатов
+
