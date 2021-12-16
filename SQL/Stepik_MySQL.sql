@@ -37,5 +37,10 @@ SELECT title,author FROM book
 WHERE title LIKE '_% _%' AND author LIKE '%С.%'
 ORDER BY title ASC;
 
+--7.Отобрать различные (уникальные) элементы столбца amount таблицы book
+SELECT amount 
+FROM book
+GROUP BY amount;
+
 
 
