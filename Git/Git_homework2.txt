@@ -39,3 +39,6 @@ git push --set-upstream origin Bug_Reports
 
 10. Синхронизировать Внешнюю и Локальную ветки Main
  git pull
+
+
+11. Git cherrypick
