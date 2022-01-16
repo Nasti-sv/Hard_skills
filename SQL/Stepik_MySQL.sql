@@ -77,5 +77,21 @@ SELECT
 ROUND (AVG(price),2) AS 'Средняя_цена',
 ROUND (SUM(price*amount),2) AS 'Стоимость'
 FROM book
-WHERE amount BETWEEN 5 AND 14
+WHERE amount BETWEEN 5 AND 14;
+
+--13.
+SELECT
+    author,
+    SUM(price*amount) AS Стоимость
+FROM
+    book
+WHERE
+    title NOT IN ('Белая гвардия', 'Идиот')
+GROUP BY
+    author 
+HAVING
+    SUM(price*amount) > 5000
+ORDER BY
+    SUM(price*amount) DESC
+
 
