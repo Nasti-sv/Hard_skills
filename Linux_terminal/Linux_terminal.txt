@@ -1,12 +1,12 @@
 Linux terminal (GitBash) commands
 
-1) Посмотреть где
+1) Посмотреть где:
 pwd (ответ: полный путь к папке /c/Users/User/desktop/animals
 
-2) Создать папку 
+2) Создать папку: 
 mkdir genious
 
-3) Зайти в папку 
+3) Зайти в папку: 
 cd genious
 
 4) Создать 3 папки 
