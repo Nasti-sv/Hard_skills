@@ -94,6 +94,8 @@ GROUP BY
 HAVING
     SUM(price*amount) > 5000
 ORDER BY
-    SUM(price*amount) DESC
+    SUM(price*amount) DESC;
+    
+   
 
 
