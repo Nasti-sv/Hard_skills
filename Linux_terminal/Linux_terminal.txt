@@ -9,13 +9,13 @@ mkdir genious
 3) Зайти в папку: 
 cd genious
 
-4) Создать 3 папки 
+4) Создать 3 папки: 
 mkdir happy course Nastia
 
-5) Зайти в любую папку 
+5) Зайти в любую папку: 
 cd course
 
-6) Создать 5 файлов 
+6) Создать 5 файлов: 
 (3 txt, 2 json) touch file{1..3}.txt interesting{1..2}.json
 
 7) Создать 3 папки
