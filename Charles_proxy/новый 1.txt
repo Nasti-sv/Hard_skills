@@ -12,3 +12,4 @@ SSL сертификат на андроид
 2. настройки = network and internet (Підключення) = wi fi = configure - proxy (manual) ввести IP с компа в строку Proxy hostname або в прокси посмотреть help - local IP, proxy port 8888 , DHCP - сохранить
 3. Chls.pro/ssl скачать. Потом в настройки вайфай = три точки - дополнительно - установика мережю сертификатов
 
+neww
