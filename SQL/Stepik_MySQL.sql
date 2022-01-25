@@ -116,7 +116,8 @@ ORDER BY price DESC;
 --в отсортированном по возрастанию цены виде.
 SELECT author, title, price
 FROM book
-WHERE price <= (SELECT MIN(price)+150
+WHERE price <= (
+                SELECT MIN(price)+150
                 FROM book)
 ORDER BY price ASC;
 
