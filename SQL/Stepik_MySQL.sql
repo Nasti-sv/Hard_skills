@@ -84,8 +84,7 @@ WHERE amount BETWEEN 5 AND 14;
 --Вычисляемый столбец назвать Стоимость. Результат отсортировать по убыванию стоимости.
 SELECT author,
     SUM(price*amount) AS Стоимость
-FROM
-    book
+FROM book
 WHERE
     title NOT IN ('Белая гвардия', 'Идиот')
 GROUP BY
