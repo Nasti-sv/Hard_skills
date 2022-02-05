@@ -2,6 +2,8 @@
 
 Короткое описание (Summary)
 
+Описание (description)
+
 Проект (Project)
 
 Серьезность (Severity)
