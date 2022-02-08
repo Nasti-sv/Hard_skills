@@ -129,3 +129,10 @@ WHERE amount IN (
         GROUP BY amount
         HAVING COUNT(amount) = 1
       );
+--18. 
+SELECT title, author,amount, price  
+FROM book
+WHERE price < ANY (
+    SELECT MIN(price) 
+    FROM book
+    GROUP BY author );
