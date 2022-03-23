@@ -130,7 +130,7 @@ WHERE amount IN (
         HAVING COUNT(amount) = 1
       );
 --18. Вывести информацию о книгах(автор, название, цена), цена которых меньше самой большой из минимальных цен, вычисленных для каждого автора.
-SELECT title, author,amount, price  
+SELECT  author, title, price  
 FROM book
 WHERE price < ANY (
     SELECT MIN(price) 
