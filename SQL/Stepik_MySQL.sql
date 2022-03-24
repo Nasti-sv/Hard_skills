@@ -146,5 +146,9 @@ FROM book
 WHERE amount < (SELECT MAX(amount) FROM book);
 
 --20. Найти автора, цена книг которого находится в диапазоне от 450 до 500, а также количество его книг больше среднего значения всех книг.
-
+SELECT author
+FROM book
+WHERE price IN (SELECT price FROM book WHERE price BETWEEN 450 AND 500) AND
+amount > (SELECT AVG(amount) FROM book)
+GROUP BY author;
  
