@@ -144,3 +144,7 @@ SELECT title, author, amount,
 (SELECT ABS(amount - (SELECT MAX(amount) FROM book ))) AS 'Заказ'
 FROM book
 WHERE amount < (SELECT MAX(amount) FROM book);
+
+--20. Найти автора, цена книг которого находится в диапазоне от 450 до 500, а также количество его книг больше среднего значения всех книг.
+
+ 
