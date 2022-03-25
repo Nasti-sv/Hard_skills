@@ -24,7 +24,7 @@ right join employees e on es.employee_id = e.id
 right join salary s on es.salary_id = s.id
 where e.employee_name is null and s.monthly_salary <2000;
 
---5. Найти всех работников кому не начислена ЗП.
+--5. Найти всех работников кому не начислена зарплата.
 select e.employee_name , s.monthly_salary from employees e
 left join employee_salary es on es.employee_id = e.id 
 left join salary s on es.salary_id = s.id 
