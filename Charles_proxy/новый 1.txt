@@ -5,7 +5,7 @@ help - SSL proxying - Install Charles Root certificate - установить с
 
 
 
-настройка телефона андроид
+Настройка телефона андроид
 
 SSL сертификат на андроид
 1. опционально - Help - SSL Proxying - install Charles on a Mobile device or Remote Browser - http://chls.pro/ssl 
