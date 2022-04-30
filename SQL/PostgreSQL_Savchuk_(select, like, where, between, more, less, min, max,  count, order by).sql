@@ -1,5 +1,5 @@
 
---1. Вывести все поля и все строки.
+--1. Вывести все поля и все строки с таблицы.
 select * from students;
  --2. Вывести всех студентов в таблице
  select name, email,password from students;
