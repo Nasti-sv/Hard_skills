@@ -1,0 +1,20 @@
+Open https://wwww.altexsoft.com
+STR:
+Open dev tools
+Open Elements tab 
+Click on inspector for searching elements
+Choose logo 
+Click Ctrl+F
+(A seasch line is displayed) 
+
+Exsercices: 
+1.Find altexsoft logo
+//div[@class='nav-toggle-bar']/a[@class='logo']
+
+2.Find the list of nav menu links (Company, Travel Technology... should be 10 items)
+//ul[@id='menu-main-menu']/li[not(contains(@class, 'hide'))]/a
+
+3. Find items following "Health Care" in "Evolve with Our Knowledge of Your Business Vertical"
+
+
+4. Find "Let`s connect" button from Get in Touch form
