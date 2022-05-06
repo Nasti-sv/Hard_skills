@@ -1,4 +1,4 @@
-Linux terminal (GitBash) commands
+Linux terminal (GitBash on Windows) commands
 
 1) Посмотреть где:
 pwd (ответ: полный путь к папке /c/Users/User/desktop/animals
