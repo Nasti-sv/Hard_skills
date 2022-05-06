@@ -15,6 +15,7 @@ Exsercices:
 //ul[@id='menu-main-menu']/li[not(contains(@class, 'hide'))]/a
 
 3. Find items following "Health Care" in "Evolve with Our Knowledge of Your Business Vertical"
-
+//a[@href='/health-care/']/../following-sibling::li
+span[@class='icon-health']/ancestor::li
 
 4. Find "Let`s connect" button from Get in Touch form
