@@ -6,3 +6,10 @@ At first - turn on capturing (toggle button in the header)
 Next steps:
 1. Click on settings
 2. Click on HTTPS tab - click [trust root certificate]
+Check if checkboxes are tricked:
+on Https tab - all checkboxes
+Other tabs:
+- Act as system proxy on startup
+- Allow remote computers to connect ( for android traffic capture)
+- Proxy number - 8866 (for remote devices)
+
