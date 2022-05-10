@@ -1,6 +1,8 @@
 How to start?
 At first - turn on capturing (toggle button in the header)
 
+*If any problems - try opening Fiddler as administrator user
+
 Next steps:
 1. Click on settings
 2. Click on HTTPS tab - click [trust root certificate]
