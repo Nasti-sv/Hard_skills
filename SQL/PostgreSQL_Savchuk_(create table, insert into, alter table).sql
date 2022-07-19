@@ -3,7 +3,7 @@
 
 --==================================================
 
---Таблица employees
+--1.Таблица employees
 
 --1.Создать таблицу employees_now
 -- id. serial,  primary key,
