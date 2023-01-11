@@ -4,6 +4,9 @@ SELECT * FROM Customers;
 SELECT City  FROM Customers;
 --3.	Select all the different values from the Country column in the Customers table.
 SELECT DISTINCT Country FROM Customers;
+
+--WHERE
+
 --4.	Select all records where the City column has the value "Berlin".
 SELECT * FROM Customers
 WHERE City = “Berlin”;
@@ -21,3 +24,44 @@ AND PostalCode = 12209;
 SELECT * FROM Customers
 WHERE City = “Berlin”
 OR City = “London”;
+
+--ORDER BY
+
+--9.Select all records from the Customers table, sort the result alphabetically by the column City.
+SELECT * FROM Customers
+ORDER BY City;
+--10. Select all records from the Customers table, sort the result reversed alphabetically by the column City.
+SELECT * FROM Customers
+ORDER BY City DESC;
+--11.Select all records from the Customers table, sort the result alphabetically, first by the column Country, then, by the column City.
+SELECT * FROM Customers
+ORDER BY Country, City;
+
+--12.Insert a new record in the Customers table.
+INSERT INTO Customers (
+CustomerName, 
+Address, 
+City, 
+PostalCode,
+Country)
+VALUES (
+'Hekkan Burger',
+'Gateveien 15',
+'Sandnes',
+'4306',
+'Norway');
+
+--NULL
+--12. Select all records from the Customers where the PostalCode column is empty.
+SELECT * FROM Customers
+WHERE PostalCode IS NULL
+
+--13.Select all records from the Customers where the PostalCode column is NOT empty.
+SELECT * FROM Customers
+WHERE PostalCode IS NOT NULL;
+
+
+
+
+
+
